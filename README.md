@@ -1,4 +1,4 @@
 # instagram-dio-master
 
-Projeto de construção da página inicial do instagram.
-Usando HTML, CSS com Flexbos e responsividade.
+Projeto de construção da página inicial do Instagram.
+Usando HTML, CSS com Flexbox e responsividade.
