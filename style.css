@@ -17,14 +17,21 @@ body {
     justify-content: center;
 }
 
-.instagram-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 60%;
+main {
+    width: 100%;
     height: 100vh;
 }
 
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 935px;
+    width: 100%;
+    height: 83.5vh;
+    margin: 0 auto;
+    padding-right: 17px;
+}
 .instagram-phone {
     display: flex;
     align-items: center;
@@ -40,6 +47,12 @@ body {
     width: 260px;
     margin-top: -18px;
 }
+
+instagram-phone img {
+    height: 50rem;
+}
+
+
  img .screen {
     height: 30rem;
 }
@@ -135,11 +148,6 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-footer {
-    margin-top: auto;
-    position: relative;
-}
-
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
@@ -147,9 +155,71 @@ footer {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    margin-bottom: 15px;
+    height: 170px;
+}
+footer nav ul {
+    text-align: center;
+}
+footer nav ul li {
+    display: inline;
+}
+footer ul li a {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8e8e8e;
+}
+.footer-copy select {
+    cursor: pointer;
+    opacity: 0.4;
+    margin-right: 10px;
+    border: 0;
+    font-size: 12px;
+}
+.footer-copy select:focus-visible {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.footer-copy option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.footer-copy p {
+    font-size: 12px;
+}
+
+             /* media queries */
+
+
+
 @media (max-width: 650px) {
+
     body {
         background-color: #ffffff;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer nav {
+        width: 80%;
     }
 
     .instagram-wrapper {
@@ -167,4 +237,5 @@ footer {
     .group {
         border: 1px solid transparent;
     }
+
 }
